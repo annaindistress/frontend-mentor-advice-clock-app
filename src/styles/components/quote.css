@@ -1,0 +1,65 @@
+.quote {
+  display: grid;
+  grid-template-columns: minmax(auto, 540px) 16px;
+  gap: 16px;
+  max-width: 640px;
+  margin-inline: auto;
+  padding-block: 32px;
+  padding-inline: 26px;
+}
+
+.quote__item {
+  margin: 0;
+  line-height: 1.84;
+}
+
+.quote__text {
+  margin-block: 0 8px;
+}
+
+.quote__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quote__update-button {
+  align-self: start;
+  margin-top: 8px;
+  padding: 0;
+  height: 16px;
+  color: var(--quote-update);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.quote__update-button:focus {
+  color: white;
+}
+
+.quote__update-icon {
+  display: block;
+}
+
+@media (min-width: 768px) {
+
+  .quote {
+    padding-block: 80px;
+    padding-inline: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .quote {
+    max-width: 1110px;
+    padding-block-start: 56px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .quote__update-button:hover {
+    color: white;
+  }
+}

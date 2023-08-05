@@ -1,0 +1,34 @@
+.clock {
+  position: relative;
+  min-height: 100vh;
+  background-image: var(--bg-mobile);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  display: block;
+  background-color: hsla(0, 0%, 0%, 40%);
+}
+
+.clock__section {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+
+  .clock {
+    background-image: var(--bg-tablet);
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .clock {
+    background-image: var(--bg-desktop);
+  }
+}

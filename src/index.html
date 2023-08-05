@@ -5,8 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./scripts/script.js" type="module"></script>
   <title>Frontend Mentor | Clock App</title>
 </head>
 <body class="page">
+  <h1 class="sr-only">Clock app</h1>
+  <main class="clock">
+    <section class="clock__section clock__quote quote">
+      <blockquote class="quote__item"></blockquote>
+      <button class="quote__update-button" type="button">
+        <svg class="quote__update-icon" viewBox="0 0 18 18">
+          <title>Refresh</title>
+          <use href="/images/sprite.svg#update"></use>
+        </svg>
+      </button>
+    </section>
+  </main>
 </body>
 </html>

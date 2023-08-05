@@ -1,0 +1,7 @@
+:root {
+  --quote-update: hsl(0, 0%, 44%);
+
+  --bg-mobile: url('/images/bg-nighttime-mobile.jpg');
+  --bg-tablet: url('/images/bg-nighttime-tablet.jpg');
+  --bg-desktop: url('/images/bg-nighttime-desktop.jpg');
+}

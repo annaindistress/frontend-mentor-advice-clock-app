@@ -1,1 +1,11 @@
 @import './fonts.css';
+@import './day-theme.css';
+@import './components/sr-only.css';
+@import './components/box-sizing.css';
+@import './components/page.css';
+@import './components/clock.css';
+@import './components/quote.css';
+
+:root {
+  --color-main: 0 0% 19%;
+}
