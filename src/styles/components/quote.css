@@ -1,11 +1,12 @@
 .quote {
+  overflow: hidden;
+}
+
+.quote__container {
   display: grid;
   grid-template-columns: minmax(auto, 540px) 16px;
   gap: 16px;
-  max-width: 640px;
-  margin-inline: auto;
   padding-block: 32px;
-  padding-inline: 26px;
 }
 
 .quote__item {
@@ -43,16 +44,14 @@
 
 @media (min-width: 768px) {
 
-  .quote {
+  .quote__container {
     padding-block: 80px;
-    padding-inline: 0;
   }
 }
 
 @media (min-width: 1200px) {
 
-  .quote {
-    max-width: 1110px;
+  .quote__container {
     padding-block-start: 56px;
   }
 }

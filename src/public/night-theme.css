@@ -4,4 +4,7 @@
   --bg-mobile: url('/images/bg-nighttime-mobile.jpg');
   --bg-tablet: url('/images/bg-nighttime-tablet.jpg');
   --bg-desktop: url('/images/bg-nighttime-desktop.jpg');
+
+  --info-text: white;
+  --info-bg: hsla(0, 0%, 0%, 75%);
 }

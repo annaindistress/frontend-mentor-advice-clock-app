@@ -12,13 +12,55 @@
   <h1 class="sr-only">Clock app</h1>
   <main class="clock">
     <section class="clock__section clock__quote quote">
-      <blockquote class="quote__item"></blockquote>
-      <button class="quote__update-button" type="button">
-        <svg class="quote__update-icon" viewBox="0 0 18 18">
-          <title>Refresh</title>
-          <use href="/images/sprite.svg#update"></use>
+      <div class="quote__container">
+        <blockquote class="quote__item"></blockquote>
+        <button class="quote__update-button" type="button">
+          <svg class="quote__update-icon" viewBox="0 0 18 18" width="18">
+            <title>Refresh</title>
+            <use href="/images/sprite.svg#update"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="clock__section clock__time time">
+      <p class="time__daytime">
+        <svg class="time__daytime-icon" viewBox="0 0 24 24" width="24">
+          <use href="/images/sprite.svg#sun"></use>
+        </svg>
+        Good morning
+        <span class="mobile-hide">, it's currently</span>
+      </p>
+      <p class="time__item">
+        <span class="time__numbers">11:37</span>
+        bst
+      </p>
+      <p class="time__place">In London, UK</p>
+      <button class="time__toggle-button" type="button">
+        More
+        <svg class="time__toggle-icon" viewBox="0 0 40 40" width="32">
+          <use href="/images/sprite.svg#arrow-up"></use>
         </svg>
       </button>
+    </section>
+    <section class="clock__info info">
+      <dl class="clock__section info__list">
+        <div class="info__item info__item--timezone">
+          <dt class="info__term">Current timezone</dt>
+          <dd class="info__definition">Europe/London</dd>
+        </div>
+        <div class="info__item info__item--day-year">
+          <dt class="info__term">Day of the year</dt>
+          <dd class="info__definition">295</dd>
+        </div>
+        <div class="info__item info__item--day-week">
+          <dt class="info__term">Day of the week</dt>
+          <dd class="info__definition">5</dd>
+        </div>
+        <div class="info__item info__item--week">
+          <dt class="info__term">Week number</dt>
+          <dd class="info__definition">42</dd>
+        </div>
+      </dl>
     </section>
   </main>
 </body>

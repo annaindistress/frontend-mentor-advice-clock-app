@@ -1,11 +1,15 @@
 @import './fonts.css';
 @import './day-theme.css';
 @import './components/sr-only.css';
+@import './components/mobile-hide.css';
 @import './components/box-sizing.css';
 @import './components/page.css';
 @import './components/clock.css';
 @import './components/quote.css';
+@import './components/time.css';
+@import  './components/info.css';
 
 :root {
   --color-main: 0 0% 19%;
+  --color-hover: 0 0% 60%;
 }

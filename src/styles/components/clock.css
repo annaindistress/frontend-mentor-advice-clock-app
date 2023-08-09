@@ -1,10 +1,17 @@
 .clock {
   position: relative;
+  display: grid;
+  grid-template-rows: 1fr max-content 0fr;
   min-height: 100vh;
   background-image: var(--bg-mobile);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  transition: grid-template-rows .4s ease-in;
+}
+
+.clock--open {
+  grid-template-rows: 0fr 1fr 256px;
 }
 
 .clock::before {
@@ -17,6 +24,10 @@
 
 .clock__section {
   position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  padding-inline: 26px;
 }
 
 @media (min-width: 768px) {
@@ -24,11 +35,27 @@
   .clock {
     background-image: var(--bg-tablet);
   }
+
+  .clock--open {
+    grid-template-rows: 0fr 1fr 440px;
+  }
+
+  .clock__section {
+    padding-inline: 0;
+  }
 }
 
 @media (min-width: 1200px) {
 
   .clock {
     background-image: var(--bg-desktop);
+  }
+
+  .clock--open {
+    grid-template-rows: 0fr 1fr 400px;
+  }
+
+  .clock__section {
+    max-width: 1110px;
   }
 }
