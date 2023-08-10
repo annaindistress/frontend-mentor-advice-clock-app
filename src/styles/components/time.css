@@ -63,6 +63,7 @@
   color: hsla(0, 0%, 0%, 50%);
   border: 0;
   border-radius: 28px;
+  cursor: pointer;
 }
 
 .time__toggle-icon {
