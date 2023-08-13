@@ -23,12 +23,25 @@ Users should be able to:
 
 ## Screenshot
 
+![](./screenshot.png)
+
 ## Links
 
 - [Solution URL](https://github.com/annaindistress/frontend-mentor-advice-clock-app)
 - [Live Site URL](https://annaindistress.github.io/frontend-mentor-advice-clock-app/)
 
 ## Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- PostCSS
+- Mobile-first workflow
+- Vanilla JavaScript
+- Vite
+- [Quotable API](https://github.com/lukePeavey/quotable)
+- [IP Geolocation API](https://ip-api.com/)
+- [WorldTimeAPI](http://worldtimeapi.org/)
 
 ## Author
 
