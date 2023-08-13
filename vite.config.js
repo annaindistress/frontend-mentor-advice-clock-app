@@ -9,6 +9,6 @@ export default defineConfig({
       ],
     },
   },
-  base: '/clock-app/',
+  base: '/frontend-mentor-clock-app/',
   root: 'src',
 });
