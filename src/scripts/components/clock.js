@@ -41,19 +41,18 @@ const controlInfo = async () => {
     const timeNumbersElement = document.querySelector('.time__numbers');
     window.setInterval(() => {
       timeNumbersElement.innerHTML = updateTime();
-      applyTheme();
+      userInfo.theme = getTheme();
+      document.documentElement.dataset.theme = userInfo.theme.theme;
     }, 1000);
   } catch (error) {
     userInfo.theme = getTheme();
-    applyTheme();
     timeElement.innerHTML = `
       <p class="time__daytime">
         ${error}
       </p>
     `;
-
   } finally {
-    applyTheme();
+    document.documentElement.dataset.theme = userInfo.theme.theme;
   }
 };
 
@@ -146,32 +145,12 @@ const getTheme = () => {
   }
 };
 
-const setDefaultTheme = () => {
-  const darkThemeElement = document.createElement('link');
-  darkThemeElement.rel = 'stylesheet';
-  darkThemeElement.href = './night-theme.css';
-  darkThemeElement.media = 'not all';
-  document.head.querySelector('link[rel=stylesheet]').after(darkThemeElement);
-};
-
-const applyTheme = () => {
-  const darkThemeMediaMap = {
-    day: 'not all',
-    night: 'all',
-  };
-  const darkThemeStyles = document.head.querySelector(
-    'link[rel=stylesheet][href$="night-theme.css"]'
-  );
-  darkThemeStyles.media = darkThemeMediaMap[userInfo.theme.theme];
-};
-
 const toggleInfo = button => {
   clockElement.classList.toggle('clock--open');
   button.blur();
 };
 
 const controlClock = () => {
-  setDefaultTheme();
   controlInfo();
 
   timeElement.addEventListener('click', evt => {

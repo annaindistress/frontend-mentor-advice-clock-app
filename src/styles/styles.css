@@ -1,5 +1,4 @@
 @import './fonts.css';
-@import './day-theme.css';
 @import './components/sr-only.css';
 @import './components/mobile-hide.css';
 @import './components/box-sizing.css';
@@ -12,4 +11,26 @@
 :root {
   --color-main: 0 0% 19%;
   --color-hover: 0 0% 60%;
+}
+
+html[data-theme='day'] {
+  --quote-update: hsl(0, 0%, 100%, 50%);
+
+  --bg-mobile: url('/images/bg-daytime-mobile.jpg');
+  --bg-tablet: url('/images/bg-daytime-tablet.jpg');
+  --bg-desktop: url('/images/bg-daytime-desktop.jpg');
+
+  --info-text: hsl(var(--color-main));
+  --info-bg: hsla(0, 0%, 100%, 75%);
+}
+
+html[data-theme='night'] {
+  --quote-update: hsl(0, 0%, 44%);
+
+  --bg-mobile: url('/images/bg-nighttime-mobile.jpg');
+  --bg-tablet: url('/images/bg-nighttime-tablet.jpg');
+  --bg-desktop: url('/images/bg-nighttime-desktop.jpg');
+
+  --info-text: white;
+  --info-bg: hsla(0, 0%, 0%, 75%);
 }
