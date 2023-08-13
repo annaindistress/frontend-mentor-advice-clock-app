@@ -75,7 +75,7 @@ const renderInfo = () => {
   timeElement.innerHTML = `
     <p class="time__daytime">
       <svg class="time__daytime-icon" viewBox="0 0 24 24" width="24">
-        <use href="/images/sprite.svg#${
+        <use href="/frontend-mentor-clock-app/images/sprite.svg#${
           userInfo.theme.theme === 'day' ? 'sun' : 'moon'
         }"></use>
       </svg>
@@ -90,7 +90,7 @@ const renderInfo = () => {
     <button class="time__toggle-button" type="button">
       More
       <svg class="time__toggle-icon" viewBox="0 0 40 40" width="32">
-        <use href="/images/sprite.svg#arrow-up"></use>
+        <use href="/frontend-mentor-clock-app/images/sprite.svg#arrow-up"></use>
       </svg>
     </button>
   `;
