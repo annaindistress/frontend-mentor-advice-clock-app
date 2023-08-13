@@ -41,7 +41,7 @@ Users should be able to:
 - Vite
 - [Quotable API](https://github.com/lukePeavey/quotable)
 - [IP Geolocation API](https://ipapi.co/json/)
-- [WorldTimeAPI](http://worldtimeapi.org/)
+- [WorldTimeAPI](https://worldtimeapi.org/)
 
 ## Author
 
