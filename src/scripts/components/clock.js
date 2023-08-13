@@ -34,6 +34,7 @@ const controlInfo = async () => {
     userInfo.dayOfYear = timeData.day_of_year;
     userInfo.dayOfWeek = timeData.day_of_week;
     userInfo.weekNumber = timeData.week_number;
+    userInfo.theme = getTheme();
 
     renderInfo();
 
@@ -43,13 +44,15 @@ const controlInfo = async () => {
       applyTheme();
     }, 1000);
   } catch (error) {
+    userInfo.theme = getTheme();
+    applyTheme();
     timeElement.innerHTML = `
       <p class="time__daytime">
         ${error}
       </p>
     `;
+
   } finally {
-    userInfo.theme = getTheme();
     applyTheme();
   }
 };

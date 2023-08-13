@@ -1,13 +1,13 @@
 .clock {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr max-content 0fr;
+  grid-template-rows: 1fr 1fr 0px;
   min-height: 100vh;
   background-image: var(--bg-mobile);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  transition: grid-template-rows .4s ease-in;
+  transition: grid-template-rows .5s ease-in;
 }
 
 .clock--open {
