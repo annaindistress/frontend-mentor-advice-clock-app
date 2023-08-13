@@ -40,7 +40,7 @@ Users should be able to:
 - Vanilla JavaScript
 - Vite
 - [Quotable API](https://github.com/lukePeavey/quotable)
-- [IP Geolocation API](https://ip-api.com/)
+- [IP Geolocation API](https://ipapi.co/json/)
 - [WorldTimeAPI](http://worldtimeapi.org/)
 
 ## Author

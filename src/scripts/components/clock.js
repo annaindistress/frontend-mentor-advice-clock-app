@@ -23,9 +23,9 @@ const userInfo = {
 const controlInfo = async () => {
   try {
     const ipData = await getJSON(config.IP_API_URL);
-    if (ipData.status !== 'success') throw new Error(ipData.message);
-    userInfo.ip = ipData.query;
-    userInfo.country = ipData.country;
+    if (!ipData) throw new Error(ipData.message);
+    userInfo.ip = ipData.ip;
+    userInfo.country = ipData.country_name;
     userInfo.city = ipData.city;
 
     const timeData = await getJSON(`${config.TIME_API_URL}${userInfo.ip}`);
