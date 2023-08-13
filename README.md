@@ -27,8 +27,8 @@ Users should be able to:
 
 ## Links
 
-- [Solution URL](https://github.com/annaindistress/frontend-mentor-advice-clock-app)
-- [Live Site URL](https://annaindistress.github.io/frontend-mentor-advice-clock-app/)
+- [Solution URL](https://github.com/annaindistress/frontend-mentor-clock-app)
+- [Live Site URL](https://annaindistress.github.io/frontend-mentor-clock-app/)
 
 ## Built with
 
