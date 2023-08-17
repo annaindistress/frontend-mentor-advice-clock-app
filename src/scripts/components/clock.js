@@ -76,6 +76,7 @@ const getTime = () => {
 
 const render = data => {
   timeElement.innerHTML = `
+    <h2 class="sr-only">Clock</h2>
     <p class="time__daytime">
       <svg class="time__daytime-icon" viewBox="0 0 24 24" width="24">
         <use href="/frontend-mentor-clock-app/images/sprite.svg#${
