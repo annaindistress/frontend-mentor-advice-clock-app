@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: repeat(4, max-content);
   gap: 16px;
+  align-content: end;
   padding-block-start: 100px;
   padding-block-end: 40px;
   font-size: 15px;

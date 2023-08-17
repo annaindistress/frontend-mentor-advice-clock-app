@@ -1,7 +1,7 @@
 .clock {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr 1fr 0px;
+  grid-template-rows: 256px 1fr 0px;
   min-height: 100vh;
   background-image: var(--bg-mobile);
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 }
 
 .clock--open {
-  grid-template-rows: 0fr 1fr 256px;
+  grid-template-rows: 0px 1fr 256px;
 }
 
 .clock::before {
